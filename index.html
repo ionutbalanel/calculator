@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="input" />
+
+      <div class="buttons">
+        <button onclick="del()" class="btn-top">←</button>
+        <button onclick="add( '(' )" class="btn-top">(</button>
+        <button onclick="add( ')' )" class="btn-top">)</button>
+        <button onclick="add('+')" class="btn-op">+</button>
+
+        <button onclick="add(7)">7</button>
+        <button onclick="add(8)">8</button>
+        <button onclick="add(9)">9</button>
+        <button onclick="add('-')" class="btn-op">-</button>
+
+        <button onclick="add(4)">4</button>
+        <button onclick="add(5)">5</button>
+        <button onclick="add(6)">6</button>
+        <button onclick="add('*')" class="btn-op">*</button>
+
+        <button onclick="add(1)">1</button>
+        <button onclick="add(2)">2</button>
+        <button onclick="add(3)">3</button>
+        <button onclick="add('/')" class="btn-op">/</button>
+
+        <button onclick="add(0)">0</button>
+        <button onclick="add('.')">.</button>
+        <button onclick="reset()">C</button>
+        <button onclick="calc()" class="btn-op">=</button>
+      </div>
+    </div>
+  </body>
+</html>
